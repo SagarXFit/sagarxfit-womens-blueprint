@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SagarXFit | Women's Rational Blueprint</title>
+    <meta name="description" content="SagarXFit Women's Rational Blueprint: A free, privacy-first, scientific diet and workout calculator for Indian women. Get optimal macros, cheap protein stacks, and safe exercises.">
+    <meta name="keywords" content="Women fitness calculator, Indian women diet plan, cheap protein diet for women, female fat loss workout, SagarXFit, TDEE calculator India, safe gym workout for women">
+    <meta name="author" content="SagarXFit">
+    <meta name="robots" content="index, follow"> <meta property="og:title" content="SagarXFit | Women's Rational Blueprint">
+    <meta property="og:description" content="Stop crash diets! Get your mathematically perfect diet and workout blueprint based on your budget. 100% Free & Private.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="URL_TO_YOUR_SAGARXFIT_LOGO_OR_BANNER.jpg"> 
+    <meta property="og:site_name" content="SagarXFit">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f0f0f">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#0f0f0f">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="lang-toggle-container">
+                <button id="lang-btn" class="lang-btn">EN | A-अ (Hinglish)</button>
+            </div>
+            <h1 class="brand-title">SAGAR<span class="accent">X</span>FIT</h1>
+            <h2 class="sub-title" data-en="WOMEN'S RATIONAL BLUEPRINT" data-hi="WOMEN'S RATIONAL BLUEPRINT">WOMEN'S RATIONAL BLUEPRINT</h2>
+            <div class="privacy-badge">
+                🔒 <span data-en="100% Private. Data processed locally. Nothing is saved." data-hi="100% Private. Data aapke phone mein hi calculate hoga.">100% Private. Data processed locally. Nothing is saved.</span>
+            </div>
+        </header>
+
+        <main>
+            <form id="blueprint-form">
+                
+                <div class="input-card">
+                    <h3 data-en="1. Your Vitals" data-hi="1. Aapki Body Details">1. Your Vitals</h3>
+                    <p class="input-note" data-en="For accurate BMR calculation" data-hi="Sahi BMR aur resting calories nikalne ke liye">For accurate BMR calculation</p>
+                    
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label data-en="Age (Yrs)" data-hi="Umar (Age)">Age (Yrs)</label>
+                            <input type="number" id="age" placeholder="e.g. 25" required>
+                        </div>
+                        <div class="input-group">
+                            <label data-en="Weight (kg)" data-hi="Wazan (kg)">Weight (kg)</label>
+                            <input type="number" id="weight" placeholder="e.g. 60" required>
+                        </div>
+                        <div class="input-group">
+                            <label data-en="Height (cm)" data-hi="Lambaai (cm)">Height (cm)</label>
+                            <input type="number" id="height" placeholder="e.g. 155" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-card">
+                    <h3 data-en="2. Daily Routine" data-hi="2. Din Bhar Ka Routine">2. Daily Routine</h3>
+                    <div class="input-group">
+                        <select id="activity" required>
+                            <option value="1.2" data-en="Desk Job / Mostly Sitting" data-hi="Desk Job / Pura din baithne ka kaam">Desk Job / Mostly Sitting</option>
+                            <option value="1.375" data-en="Lightly Active (Normal Walking)" data-hi="Thoda Active / Normal chalna-firna">Lightly Active (Normal Walking)</option>
+                            <option value="1.55" data-en="Moderately Active (Active Job)" data-hi="Bohot Active / Bhaag-daud ka kaam">Moderately Active (Active Job)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-card">
+                    <h3 data-en="3. Gym Experience" data-hi="3. Gym Ka Experience">3. Gym Experience</h3>
+                    <div class="input-group">
+                        <select id="experience" required>
+                            <option value="beginner" data-en="Beginner (0-3 Months)" data-hi="Beginner (Abhi shuru kiya hai)">Beginner (0-3 Months)</option>
+                            <option value="intermediate" data-en="Intermediate (3+ Months)" data-hi="Intermediate (3 mahine se zyada)">Intermediate (3+ Months)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-card">
+                    <h3 data-en="4. Primary Goal" data-hi="4. Aapka Main Goal">4. Primary Goal</h3>
+                    <div class="input-group">
+                        <select id="goal" required>
+                            <option value="fat-loss" data-en="Fat Loss (Weight kam karna)" data-hi="Fat Loss (Weight kam karna)">Fat Loss (Weight kam karna)</option>
+                            <option value="toning" data-en="Toning (Shape & Muscle)" data-hi="Toning (Body shape aur firmness)">Toning (Shape & Muscle)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-card">
+                    <h3 data-en="5. Nutrition & Budget" data-hi="5. Diet Aur Budget">5. Nutrition & Budget</h3>
+                    <div class="input-grid-2">
+                        <div class="input-group">
+                            <select id="diet" required>
+                                <option value="veg" data-en="Pure Veg" data-hi="Pure Veg">Pure Veg</option>
+                                <option value="egg" data-en="Eggitarian" data-hi="Eggitarian (Ande allowed)">Eggitarian</option>
+                                <option value="nonveg" data-en="Non-Veg" data-hi="Non-Veg">Non-Veg</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="budget" placeholder="Budget (₹)" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" id="generate-btn" class="generate-btn" data-en="GENERATE MY BLUEPRINT" data-hi="MERA BLUEPRINT BANAO">GENERATE MY BLUEPRINT</button>
+            </form>
+        </main>
+
+        <section id="result-poster" class="result-poster" style="display: none;">
+            </section>
+
+    </div>
+<script src="script.js"></script>
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                .then(registration => {
+                    console.log('ServiceWorker registration successful!');
+                })
+                .catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
