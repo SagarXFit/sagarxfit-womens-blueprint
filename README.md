@@ -34,7 +34,7 @@ The **Women's Rational Blueprint** is not just a calculator; it's an automated d
 Built with rationality and biological science by **Sagar Verma**. 
 Creator of **SagarXFit** – A platform dedicated to exposing fitness myths and delivering data-driven, biomechanically safe training and nutritional content.
 
-* **YouTube:** [SagarXFit]((https://www.youtube.com/@RealSagarXFit))
+* **YouTube:** [@RealSagarXFit]((https://www.youtube.com/@RealSagarXFit))
 * **Instagram:** [@sagarxfit](https://www.instagram.com/realsagarxfit?igsh=dnE5am85MGF3aHZp)
 
 > *"Fitness is mathematics and biology, not miracles and starvation."*
