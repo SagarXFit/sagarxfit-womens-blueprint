@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sagarxfit-women-v1';
+const CACHE_NAME = 'sagarxfit-women-v2';
 const urlsToCache = [
     './',
     './index.html',
