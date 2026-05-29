@@ -1,7 +1,7 @@
 {
   "name": "SagarXFit Women's Blueprint",
   "short_name": "SagarXFit",
-  "start_url": "index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0f0f0f",
   "theme_color": "#dfa8a6",
