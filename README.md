@@ -2,7 +2,7 @@
 
 **A privacy-first, scientifically backed, and budget-optimized diet & workout generator explicitly designed for Indian women.**
 
-[![Live Demo](https://img.shields.io/badge/Live_App-Click_Here-00e676?style=for-the-badge)](https://SagarXFit.github.io/womens-blueprint/)
+[![Live Demo](https://img.shields.io/badge/Live_App-Click_Here-00e676?style=for-the-badge)](https://sagarxfit.github.io/sagarxfit-womens-blueprint/)
 [![Tech Stack](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JS-dfa8a6?style=for-the-badge)](#)
 
 ## ⚠️ The Problem in the Fitness Industry
